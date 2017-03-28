@@ -1,0 +1,105 @@
+.lks_shop {
+    width: 100%;
+    height: 490px;
+    background: url("../images/wall.png") no-repeat top/contain;
+    border-top: 6px solid #000;
+    border-bottom: 6px solid #000;
+    position: relative;
+}
+.lks_shop::before {
+    content: '';
+    display: block;
+    height: 208px;
+    background: #C3C3C3;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+.lks_shop .carpet {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -321px;
+}
+.lks_shop .shop_kanshan {
+    position: absolute;
+    left: 50%;
+    bottom: 120px;
+    margin-left: -250px;
+}
+.lks_shop .desk {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    margin-left: -177px;
+}
+.lks_shop .laptop {
+    position: absolute;
+    left: 50%;
+    bottom: 186px;
+    margin-left: -90px;
+}
+.lks_shop .laptop::after {
+    content: '';
+    position: absolute;
+    left: 140px;
+    top: 56px;
+    width:68px ;
+    height: 49px;
+    background: url("../images/paster-1f771e8a.png");
+}
+.lks_shop .cup {
+    position: absolute;
+    left: 50%;
+    bottom: 166px;
+    margin-left: -130px;
+}
+.lks_shop .lamp {
+    position: absolute;
+    left: 50%;
+    bottom: 120px;
+    margin-left: 120px;
+}
+@keyframes drop {
+    0% {
+        transform: translateY(0px);
+        /*display: block;*/
+    }
+    100% {
+
+        transform: translateY(595px);
+        transition: all 1s;
+    }
+}
+/*.animation {*/
+    /*animation:drop 2s 1s */
+/*}*/
+.lks_shop .notebook {
+    position: absolute;
+    left: 200px;
+    animation:drop 2s 1s both;
+    top: -200px;
+
+}
+.lks_shop .bag {
+    animation:drop 2s 1s both;
+    left: 600px;
+    position: absolute;
+    top: -240px;
+
+}
+.lks_shop .cellphone {
+    position: absolute;
+    left: 400px;
+    animation:drop 2s 1s both;
+    top: -230px;
+
+}
+.lks_shop .socks {
+    position: absolute;
+    left: 900px;
+    top: -200px;
+    animation:drop 2s 1s both;
+
+}

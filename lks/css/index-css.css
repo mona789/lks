@@ -1,0 +1,432 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #eee;
+}
+/*背景图*/
+.page {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    position: relative;
+    position: relative;
+    overflow: hidden;
+}
+/*刘看山拉灯绳*/
+.lks_main_bg {
+    /*height: 340.4px;*/
+    /*width: 819.2px;*/
+    /*background: red;*/
+    width: 100%;
+    height: 100%;
+    /*background: url(../images/inndex-bg.png) no-repeat 10% 10%;*/
+    /*background-size: 1000% 1000%;*/
+    background: url("../images/inndex-bg.png") no-repeat;
+    background-size: 1000% 1000%;
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+/*鼠标跟随事件*/
+.zhua{
+    position: absolute;
+    /*z-index: 200000;*/
+}
+.zhua2 {
+    position: absolute;
+    display: none;
+    /*z-index: 20000;*/
+}
+
+/*导航栏*/
+.lks_nav {
+    width: 100%;
+    height: 20%;
+    min-width: 520px;
+    /*height: 100px;*/
+    /*background: red;*/
+    margin-bottom: 10px;
+    /*padding: 0 40%;*/
+}
+.lks_nav  ul {
+    width: 50%;
+    height: 96px;
+    /*height: 100%;*/
+    list-style: none;
+    margin: 0 auto;
+    /*height: 80px;*/
+    /*background: green;*/
+    text-align: right;
+    position: relative;
+    
+}
+.lks_nav  ul li {
+    display: inline-block;
+    text-align: right;
+
+    margin: 0px 20px;
+
+}
+.lks_nav  ul li a {
+    font-size:20px;
+    display: block;
+    color: #222222;
+    line-height: 96px;
+    position: relative;
+}
+.lks_nav .lks_home {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 40px;
+    height: 20px;
+    /*background: red;*/
+}
+.lks_nav .lks_home::after {
+    content:'';
+    display: block;
+    width: 95px;
+    height: 56px;
+    background: url("../images/home.fw.png");
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+/*内容*/
+.lks_box {
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+.page .lks_main {
+    width: 1000%;
+    height: 490px;
+    box-sizing: border-box;
+    border-top: 6px solid black;
+    border-bottom: 6px solid black;
+    background: #90E2FE;
+    position: relative;
+display: flex;
+}
+.page .lks_main .self {
+    /*position: relative;*/
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    /*box-sizing: border-box;*/
+    /*z-index: 3000;*/
+}
+.page .lks_main .lks_qie {
+    /*background-image: url(../images/qie-824e20b9.png);*/
+    /*background: url("../images/qie-e83823de.png");*/
+    width: 406px;
+    height: 348px;
+    margin-top: 34px;
+    margin-left: 100px;
+}
+.page .lks_main .lks_beijixiong  {
+    background-image: url(../images/beijixiong-9a1aced4.png);
+
+    width: 494px;
+    height: 384px;
+}
+
+.page .lks_main .lks_liukanshan  {
+    background-image: url(../images/liukanshan-9c44f825.png);
+    background-size: 178px 220px;
+    width: 178px;
+    height: 220px;
+    padding-top: 164px;
+    margin-right: 40px;
+}
+.page .lks_main .yeou {
+    background-image: url(../images/yanou-9c81885b.png) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*box-sizing: border-box;*/
+    width: 80px;
+    height: 91px;
+    padding-top: 293px;
+    margin: 0 50px;
+}
+.page .lks_main .liumama  {
+    background-image: url(../images/liumama-7297bd6c.png);
+    padding: 140px 50px 50px 0px;
+
+
+    width: 254px;
+    height: 244px;
+}
+
+
+.page .lks_main .liubaba  {
+    background-image: url(../images/liubaba-eedd1870.png);
+    padding: 114px 50px 50px 0px;
+    width: 189px;
+    height: 270px;
+    margin-right: 100px;
+}
+.page .lks_main .self img {
+    width: 100%;
+    height: 100%;
+}
+/*底部*/
+.lks_footer {
+    padding: 0 20%;
+}
+.lks_footer ul {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.lks_footer ul li {
+    padding: 0px 20px;
+    border-right: 1px solid black;
+}
+.lks_footer ul .non{
+    border-right: none;
+}
+.lks_footer ul li a {
+    display: block;
+    font-size: 15px;
+    color: #474747;
+}
+.lks_footer ul li span{
+    font-size: 15px;
+    color: #474747;
+}
+/*隐藏的盒子*/
+.page .lks_item {
+    width: 100%;
+    /*height: 490px;*/
+    height: 60%;
+    background: yellow;
+    position: relative;
+}
+.lks_item .lks_display {
+    width: 100%;
+    height: 490px;
+    /*background: green;*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+/*.lks_item .lks_display .lks_lbb,.lks_item .lks_display .lks_bjx,.lks_item .lks_display .lks_lks,*/
+/*.lks_item .lks_display .lks_yo,.lks_item .lks_display .lks_lmm {*/
+    /*display: none;*/
+/*}*/
+.lks_item .lks_display {
+    display: none;
+
+}
+.lks_item .lks_display .display_outer {
+    width: 1000px;
+    height: 420px;
+    /*background: red;*/
+    margin: 0 auto;
+
+}
+.lks_item .lks_qe,.lks_item .lks_bjx,.lks_item .lks_lks,.lks_item .lks_yo,.lks_item .lks_qe,
+.lks_item .lks_lmm,.lks_item .lks_lbb{
+    box-sizing: border-box;
+    padding: 40px 100px;
+    width: 1000px;
+    height: 420px;
+    margin: 0 auto;
+    border: 6px solid black;
+    z-index: 200;
+    background: #fff;
+    position: absolute;
+    left:50%;
+    margin-left: -500px;
+    margin-top: 30px;
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: space-around;
+}
+.lks_item .lks_display .lks_close {
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    background: url("../images/close.png") no-repeat center/cover;
+}
+.lks_item .lks_display .display_left {
+    flex: 4;
+    height: 100%;
+    /*background: yellow;*/
+}
+.lks_item .lks_display .display_right {
+    height: 100%
+    z-index: 1000;
+    color: black;
+    /*background: red;*/
+    float: right;
+    flex: 6;
+    /*padding: 100px 40px;*/
+    box-sizing: padding-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*common结束*/
+
+.lks_item .lks_display .lks_qe .display_right ul {
+    /*margin-left: 40px;*/
+
+}
+.lks_item .lks_display .lks_qe .display_right ul li {
+    line-height: 40px;
+    font-size: 14px;
+    color: #222;
+}
+.lks_item .lks_display .lks_qe .display_left {
+    background-origin: content-box;
+    background-image: url("../images/qie-824e20b9.png");
+    background-size: 100% ;
+    background-repeat: no-repeat;
+}
+
+/*display北极熊*/
+.lks_item .lks_display .lks_bjx .display_left {
+    background: url("../images/beijixiong-9a1aced4.png") no-repeat center/contain;
+}
+.lks_item .lks_display .lks_bjx .display_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.lks_item .lks_display .lks_bjx .display_right .display_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.lks_item .lks_display .lks_bjx .display_right .display_top img {
+    width: 34px;
+    height: 34px;
+
+}
+.lks_item .lks_display .lks_bjx .display_right .display_top li {
+    line-height: 30px;
+    font-size: 16px;
+}
+.lks_item .lks_display .lks_bjx .display_right .display_bottom li {
+    line-height: 30px;
+    font-size: 16px;
+    padding-right:20px ;
+}
+/*刘看山*/
+.lks_item .lks_display .lks_lks .display_left {
+    background: url("../images/liukanshan-9c44f825.png") no-repeat center/contain;
+    padding: 50px 0px 50px;
+    background-origin: content-box;
+    box-sizing: border-box;
+}
+.lks_item .lks_display .lks_lks .display_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.lks_item .lks_display .lks_lks .display_right .display_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.lks_item .lks_display .lks_lks .display_right .display_top img {
+    width: 70px;
+    height: 49px;
+    margin: auto 0px;
+}
+.lks_item .lks_display .lks_lks .display_right .display_top li {
+    line-height: 30px;
+    font-size: 14px;
+}
+.lks_item .lks_display .lks_lks .display_right .display_bottom {
+    width: 100%;
+    display: flex;
+
+    justify-content: space-around;
+
+}
+.lks_item .lks_display .lks_lks .display_right .display_bottom .question {
+   padding-top: 48px;
+}
+.lks_item .lks_display .lks_lks .display_right .display_bottom .question p {
+    line-height: 30px;
+    font-size: 14px;
+}
+.lks_item .lks_display .lks_lks .display_right .display_bottom .test {
+    display: flex;
+
+}
+.lks_item .lks_display .lks_lks .display_right .display_bottom .test img {
+    margin-left: 40px;
+}
+.lks_item .lks_display .lks_lks .display_right .display_bottom .test p {
+    padding: 3px 20px;
+    background: #ccc;
+    text-align: center;
+    border-radius: 4px;
+}
+.lks_item .lks_display .lks_lks .display_right .display_bottom li {
+    line-height: 30px;
+    font-size: 14px;
+}
+/*燕鸥*/
+.lks_item .lks_display .lks_yo .display_left {
+    background: url("../images/tree.png") no-repeat center/contain;
+    padding: 50px 20px 50px;
+    background-origin: content-box;
+    box-sizing: border-box;
+}
+.lks_item .lks_display .lks_yo .display_left .tree_bird {
+    background: url("../images/yanou-9c81885b.png") no-repeat center/contain;
+    background-origin: content-box;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+/*燕鸥小姐*/
+.lks_item .lks_display .lks_yo .display_right {
+    position: relative;
+}
+.lks_item .lks_display .lks_yo .display_right .yo_bird {
+  position: absolute;
+    left: 170px;
+    top: 120px;
+}
+.lks_item .lks_display .lks_yo .display_right li {
+    font-size: 14px;
+    line-height: 30px;
+}
+/*刘妈妈*/
+.lks_item .lks_display .lks_lmm .display_left {
+    background: url("../images/liumama-7297bd6c.png") no-repeat center/contain;
+    padding: 50px 20px 50px;
+    background-origin: content-box;
+    box-sizing: border-box;
+}
+.lks_item .lks_display .lks_lmm .display_right li {
+    font-size: 14px;
+    line-height: 30px;
+}
+/*刘爸爸*/
+.lks_item .lks_display .lks_lbb .display_left {
+    background: url("../images/liubaba-eedd1870.png") no-repeat center/contain;
+    padding: 50px 20px 50px;
+    background-origin: content-box;
+    box-sizing: border-box;
+}
+.lks_item .lks_display .lks_lbb .display_right li {
+    font-size: 14px;
+    line-height: 30px;
+}
+/*点击人物*/

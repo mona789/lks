@@ -1,0 +1,62 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content="width=device-width user-scalable=0 initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body, html {  background-color: gray;
+        }
+        .dog {
+            width: 60vw;
+            height: 80vh;
+            margin: auto;
+            background-color: magenta;
+            background: url("../images/inndex-bg.png") no-repeat;
+            background-size: 1011% 499%;
+            background-position: 0% 0%;
+        }
+    </style>
+</head>
+<body>
+<div class="dog"></div>
+<script>
+    window.onload = function () {
+        run()
+    }
+    function run() {
+        var stop;
+        var dog = document.querySelector('.dog');
+        console.log(dog.style);
+        var x = 0;
+        var y = 0;
+        dog.addEventListener('click', function () {
+            stop = setInterval(
+                    function () {
+                        dog.style.backgroundPosition = '' + x * 11.1 + '% ' + y * 25 + '%';
+                        if(x==9&&y==4){
+                            x=0;
+                            y=0;
+                        }
+                        if(x==9){
+                            x=0;
+                            y++;
+                        }
+                        x++;
+                    }
+                    , 200)
+        })
+
+    }
+
+</script>
+
+</body>
+
+</html>
